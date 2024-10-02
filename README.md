@@ -1,4 +1,4 @@
-<img src="images/logo.jpeg" alt="Logo" style="max-width: 30%; height: auto;">
+<img src="images/logo.jpeg" alt="Logo" style="max-width: auto; height: 200px;">
 
 
 **CopyCatalyst** is a powerful tool designed to make copying code and files easier for interacting with Large Language Models (LLMs). It lets you quickly select multiple files and automatically format their contents with filenames, all copied to your clipboard.

@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="copycatalyst",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="0xrushi",
+    author_email="",
     description="A file selection and content copying tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/copycatalyst",
+    url="https://github.com/0xrushi/copycatalyst",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[

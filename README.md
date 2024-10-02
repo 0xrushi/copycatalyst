@@ -18,7 +18,7 @@ pip install -e .
 
 **To run copycatalyst in current dir**
 ```
-copy catalyst .
+copycatalyst .
 ```
 
 **To select all files in current dir**

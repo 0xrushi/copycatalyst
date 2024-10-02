@@ -7,7 +7,7 @@ from prompt_toolkit.widgets import TextArea, Frame, Button, Label
 from prompt_toolkit.key_binding import KeyBindings
 from prompt_toolkit.layout.controls import FormattedTextControl
 from prompt_toolkit.styles import Style
-import pyperclip  # Add this import at the top of your file
+import pyperclip
 
 class FileSelectorApp:
     def __init__(self, root_dir: str, auto_select_all: bool = False):

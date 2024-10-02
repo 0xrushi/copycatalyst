@@ -11,8 +11,6 @@ from prompt_toolkit.layout.controls import BufferControl, FormattedTextControl
 from prompt_toolkit.application.current import get_app
 from prompt_toolkit.document import Document
 
-MAX_FILE_SIZE = 1024 * 1024  # 1 MB
-
 class FileSelectorApp:
     def __init__(self, root_dir: str, auto_select_all: bool = False):
         self.root_dir = Path(root_dir)  
@@ -118,13 +116,13 @@ class FileSelectorApp:
         @self.kb.add('pageup', filter=Condition(lambda: get_app().layout.has_focus(self.selected_files_window)))
         def _(event):
             """Page up in selected files window."""
-            for _ in range(10):  # Adjust this number to change scroll speed
+            for _ in range(10):
                 self.selected_files_buffer.cursor_up()
 
         @self.kb.add('pagedown', filter=Condition(lambda: get_app().layout.has_focus(self.selected_files_window)))
         def _(event):
             """Page down in selected files window."""
-            for _ in range(10):  # Adjust this number to change scroll speed
+            for _ in range(10):
                 self.selected_files_buffer.cursor_down()
 
     def setup_layout(self):
@@ -241,6 +239,6 @@ Root Directory: {}
             layout=self.layout,
             key_bindings=self.kb,
             full_screen=True,
-            mouse_support=True  # Enable mouse support for easier scrolling
+            mouse_support=True
         )
         self.application.run()

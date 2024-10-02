@@ -3,6 +3,8 @@
 
 **CopyCatalyst** is a powerful tool designed to make copying code and files easier for interacting with Large Language Models (LLMs). It lets you quickly select multiple files and automatically format their contents with filenames, all copied to your clipboard.
 
+![Screen Recording Oct 01](https://github.com/user-attachments/assets/6f737928-360d-418f-800b-4aca37f17eee)
+
 ## Installation
 
 ```
